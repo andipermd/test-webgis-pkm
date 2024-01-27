@@ -844,15 +844,6 @@ html {
   content: var(--tw-content);
 }
 
-.chat {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1597,18 +1588,6 @@ html {
   position: relative;
 }
 
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.-bottom-2 {
-  bottom: -0.5rem;
-}
-
 .-bottom-3 {
   bottom: -0.75rem;
 }
@@ -1621,18 +1600,9 @@ html {
   z-index: 1;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .mt-3 {
@@ -1651,32 +1621,20 @@ html {
   height: 1.25rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
 .h-\[10\%\] {
   height: 10%;
 }
 
-.h-full {
-  height: 100%;
+.h-\[100dvh\] {
+  height: 100dvh;
 }
 
 .w-5 {
   width: 1.25rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-56 {
+  width: 14rem;
 }
 
 .w-\[90\%\] {
@@ -1685,23 +1643,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .items-center {
@@ -1729,6 +1670,11 @@ html {
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 
+.bg-base-200 {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -1739,22 +1685,8 @@ html {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-base-200 {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .pt-3 {
